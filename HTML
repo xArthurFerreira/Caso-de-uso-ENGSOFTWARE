@@ -1,0 +1,28 @@
+#HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Consultas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agendamento de Consultas</h1>
+        <form id="appointment-form">
+            <label for="client-name">Nome do Cliente:</label>
+            <input type="text" id="client-name" required>
+            <label for="pet-name">Nome do Animal:</label>
+            <input type="text" id="pet-name" required>
+            <label for="appointment-date">Data da Consulta:</label>
+            <input type="date" id="appointment-date" required>
+            <label for="symptoms">Sintomas:</label>
+            <textarea id="symptoms" required></textarea>
+            <button type="submit">Agendar Consulta</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
