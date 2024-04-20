@@ -1,0 +1,18 @@
+document.getElementById('appointment-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Obter os valores do formulário
+    var clientName = document.getElementById('client-name').value;
+    var petName = document.getElementById('pet-name').value;
+    var appointmentDate = document.getElementById('appointment-date').value;
+    var symptoms = document.getElementById('symptoms').value;
+
+    // Simular envio dos dados
+    console.log('Cliente:', clientName);
+    console.log('Animal:', petName);
+    console.log('Data da Consulta:', appointmentDate);
+    console.log('Sintomas:', symptoms);
+
+    // Limpar o formulário após o envio
+    this.reset();
+});
